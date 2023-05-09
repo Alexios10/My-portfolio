@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
@@ -43,7 +41,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
   return (
-    <div
+    <nav
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
@@ -175,7 +173,7 @@ const Navbar = () => {
           {/* Mobile Menu End */}
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

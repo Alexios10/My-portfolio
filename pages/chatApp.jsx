@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 import React from "react";
-import propertyImg from "../public/assets/projects/food.png";
+import chatAppImg from "../public/assets/projects/chat-app.png";
 
 const property = () => {
   return (
@@ -13,11 +13,11 @@ const property = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={propertyImg}
+          src={chatAppImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h1 className="font-mono">Food App</h1>
+          <h1 className="font-mono">Realtime chat app</h1>
         </div>
       </div>
 
@@ -26,18 +26,18 @@ const property = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            A React mobile responsive project styled completely with Tailwind
-            CSS. Mobile first responsive design approach using flexbox and grid
-            layouts. Pulling all of the data/images from the data.js file to
-            simulate an API response. Filter through data/images using the
-            javascript filter array method. What i liked about this project is
-            that i bulit my own API and being able to filter through the data
-            and show the user the pages based on the interaction with the
-            different products and price ranges.
+            Realtime messaging by the help of a hosted WebSocket solution called
+            Pusher. An app where you can Add friends and sending friend requests
+            via email. Used Upstash Redis as my database since its known for
+            high performance and low latency and also good security. Used Google
+            authentication by the help of NextAuth library. The icons are from
+            Lucide.dev. I learned a lot about Typescript since its my first time
+            using it in a real project like this one. When i needed help i used
+            google, Chatgpt, Stackoverflow and more. I used them a lot.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a
-              href="https://food-app-blue.vercel.app/"
+              href="https://chat-app-beta-navy.vercel.app/login"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -46,7 +46,7 @@ const property = () => {
           </button>
           <button className="px-8 py-2 mt-4">
             <a
-              href="https://github.com/Alexios10/Food-App.git"
+              href="https://github.com/Alexios10/chat-app"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,19 +57,27 @@ const property = () => {
 
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
-            <p className="text-center font-bold pb-2">Technologies Used</p>
+            <p className="font-bold pb-2">Technologies Used</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React
+                Next JS 13
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                React JS
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                Typescript
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                Upstash Redis
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
                 Tailwind CSS
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                JavaScript
               </p>
             </div>
           </div>

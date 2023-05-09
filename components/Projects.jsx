@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import propertyImg from "../public/assets/projects/food.png";
+import chatAppImg from "../public/assets/projects/chat-app.png";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
 import huluImg from "../public/assets/projects/hulu.png";
 import twitchImg from "../public/assets/projects/twitch.jpg";
@@ -16,7 +16,11 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What i have bulit</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem title="Food-UI" bgImg={propertyImg} projectUrl="/food" />
+          <ProjectItem
+            title="Realtime chat app"
+            bgImg={chatAppImg}
+            projectUrl="/chatApp"
+          />
 
           <ProjectItem
             title="Crypto App"
