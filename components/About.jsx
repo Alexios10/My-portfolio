@@ -1,4 +1,6 @@
 import React from "react";
+import aboutImg from "../public/assets/about.jpg";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -36,11 +38,7 @@ const About = () => {
         </div>
 
         <div className="w-full h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-3 hover:scale-105 ease-in duration-300">
-          <img
-            className="rounded-xl"
-            src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-            alt="/"
-          />
+          <Image className="rounded-xl" src={aboutImg} alt="about-image" />
         </div>
       </div>
     </div>

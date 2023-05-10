@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 import React from "react";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
+import airbnbImg from "../public/assets/projects/airbnb-clone.png";
 
 const crypto = () => {
   return (
@@ -13,11 +13,11 @@ const crypto = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={cryptoImg}
+          src={airbnbImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h1 className="font-mono">Crypto App</h1>
+          <h1 className="font-mono">Airbnb clone</h1>
         </div>
       </div>
 
@@ -26,14 +26,20 @@ const crypto = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className="my-2">
-            A simple crypto app, where the user can see the latest news aboute
-            the cryptocurrencies. There is also a login and a sign up forms
-            where a user can log in or sign up an account to be able to save
-            their data. Used Firebase as user authentication and data storage.
+            An Airbnb like web page where user can log in either with making new
+            account or use their Google or Github accounts by the help of
+            NextAuth library. Also used react-hook-form library to handle the
+            form validation. Used Prisma to simplify the database management.
+            Used cloudinary for image uploads and also a date picker with react
+            datepicker library. I also learned a lot in this project specially
+            Typescript which helped me catch error in build time and also
+            explains what exactly the error is which makes it easy for me to
+            look for a solution. Its a fantastic language and im loving it
+            already and will be working with it a lot in my future projects.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a
-              href="https://crypto-app-rosy-iota.vercel.app/"
+              href="https://rent-rom.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,7 +48,7 @@ const crypto = () => {
           </button>
           <button className="px-8 py-2 mt-4">
             <a
-              href="https://github.com/Alexios10/crypto-app.git"
+              href="https://github.com/Alexios10/RentRom"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -53,11 +59,19 @@ const crypto = () => {
 
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
-            <p className="text-center font-bold pb-2">Technologies Used</p>
+            <p className="font-bold pb-2">Technologies Used</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
+                Next JS 13
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
                 React JS
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                Typescript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
@@ -65,11 +79,11 @@ const crypto = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Firebase
+                Mongo DB
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Cryptocurrency API
+                Prisma
               </p>
             </div>
           </div>

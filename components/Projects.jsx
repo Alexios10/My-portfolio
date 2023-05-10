@@ -1,9 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import chatAppImg from "../public/assets/projects/chat-app.png";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
+import airbnbImg from "../public/assets/projects/airbnb-clone.png";
 import huluImg from "../public/assets/projects/hulu.png";
 import twitchImg from "../public/assets/projects/twitch.jpg";
 
@@ -23,9 +21,9 @@ const Projects = () => {
           />
 
           <ProjectItem
-            title="Crypto App"
-            bgImg={cryptoImg}
-            projectUrl="/crypto"
+            title="Airbnb clone"
+            bgImg={airbnbImg}
+            projectUrl="/airbnbClone"
           />
 
           <ProjectItem title="Hulu App" bgImg={huluImg} projectUrl="/hulu" />
