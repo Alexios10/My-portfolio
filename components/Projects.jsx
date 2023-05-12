@@ -2,7 +2,7 @@ import React from "react";
 import ProjectItem from "./ProjectItem";
 import chatAppImg from "../public/assets/projects/chat-app.png";
 import airbnbImg from "../public/assets/projects/airbnb-clone.png";
-import huluImg from "../public/assets/projects/hulu.png";
+import movixImg from "../public/assets/projects/movix.png";
 import twitchImg from "../public/assets/projects/twitch.jpg";
 
 const Projects = () => {
@@ -26,7 +26,11 @@ const Projects = () => {
             projectUrl="/airbnbClone"
           />
 
-          <ProjectItem title="Hulu App" bgImg={huluImg} projectUrl="/hulu" />
+          <ProjectItem
+            title="Movies news app"
+            bgImg={movixImg}
+            projectUrl="/movix"
+          />
 
           <ProjectItem
             title="Twitch UI"

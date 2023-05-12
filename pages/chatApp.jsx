@@ -25,7 +25,7 @@ const property = () => {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>
+          <p className="mt-2">
             Realtime messaging by the help of a hosted WebSocket solution called
             Pusher. An app where you can Add friends and sending friend requests
             via email. Used Upstash Redis as my database since its known for
