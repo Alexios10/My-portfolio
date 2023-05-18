@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useRouter } from "next/router";
@@ -9,6 +9,7 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
+  const menuRef = useRef(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -40,6 +41,24 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handleShadow);
   }, []);
+
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setNav(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
+
+
   return (
     <nav
       style={{ backgroundColor: `${navBg}` }}
@@ -93,6 +112,7 @@ const Navbar = () => {
         }
       >
         <div
+          ref={menuRef}
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
