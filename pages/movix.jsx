@@ -26,13 +26,18 @@ const Hulu = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className="mt-2">
-            A simple web site to see the latest news about movies and tv-shows
+            A simple website to see whats the latest about movies and tv-shows
             and more, with a nice UI and UX. API endpoint from the
             moviedatabase.com &#40;TMDB&#41;. Used Redux for state management, I
             also used SCSS(Sass) FOR cleaner and more maintainable stylesheets.
-            In this project i learned more about Redux on how to handle states
-            by sharing them across the components in my project, also learned
-            more about SCSS.
+            By incorporating Redux into my project, i significantly improved my
+            state management strategy. The centralized state, immutable updates,
+            and well-defined actions provided by Redux ensured a predictable
+            flow of data throughout my application. Also by adopting SCSS in my
+            project, i significantly enhanced my styling efficiency and code
+            organization. The use of variables and mixins enabled me to write
+            reusable and maintainable stylesheets, while nesting selectors and
+            leveraging partials improved readability and modularity.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a

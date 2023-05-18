@@ -26,7 +26,7 @@ const crypto = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className="my-2">
-            An Airbnb like web page where user can log in either with making new
+            An Airbnb like website where user can log in either with making new
             account or use their Google or Github accounts by the help of
             NextAuth library. Also used react-hook-form library to handle the
             form validation. Used Prisma to simplify the database management.
@@ -34,7 +34,7 @@ const crypto = () => {
             datepicker library. I also learned a lot in this project specially
             Typescript which helped me catch error in build time and also
             explains what exactly the error is which makes it easy for me to
-            look for a solution. Its a fantastic language and im loving it
+            look for solutions. Its a fantastic language and im loving it
             already and will be working with it a lot in my future projects.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
@@ -84,6 +84,10 @@ const crypto = () => {
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
                 Prisma
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                NextAuth.js
               </p>
             </div>
           </div>

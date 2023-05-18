@@ -30,10 +30,11 @@ const property = () => {
             Pusher. An app where you can Add friends and sending friend requests
             via email. Used Upstash Redis as my database since its known for
             high performance and low latency and also good security. Used Google
-            authentication by the help of NextAuth library. The icons are from
-            Lucide.dev. I learned a lot about Typescript since its my first time
-            using it in a real project like this one. When i needed help i used
-            google, Chatgpt, Stackoverflow and more. I used them a lot.
+            authentication by the help of NextAuth library. The icons i used are
+            from Lucide.dev. I learned a lot about Typescript since its my first
+            time using it in a real project like this one. When i needed help i
+            used google, Stackoverflow and other web developer communities. I
+            used them a lot for this project.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a
@@ -78,6 +79,10 @@ const property = () => {
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
                 Tailwind CSS
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                NextAuth.js
               </p>
             </div>
           </div>
