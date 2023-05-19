@@ -26,18 +26,21 @@ const Hulu = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className="mt-2">
-            A simple website to see whats the latest about movies and tv-shows
-            and more, with a nice UI and UX. API endpoint from the
-            moviedatabase.com &#40;TMDB&#41;. Used Redux for state management, I
-            also used SCSS(Sass) FOR cleaner and more maintainable stylesheets.
-            By incorporating Redux into my project, i significantly improved my
-            state management strategy. The centralized state, immutable updates,
-            and well-defined actions provided by Redux ensured a predictable
-            flow of data throughout my application. Also by adopting SCSS in my
-            project, i significantly enhanced my styling efficiency and code
-            organization. The use of variables and mixins enabled me to write
-            reusable and maintainable stylesheets, while nesting selectors and
-            leveraging partials improved readability and modularity.
+            Movix is a simple and intuitive web application it serves as a
+            platform for users to stay updated on the latest movies and TV
+            shows. With a sleek UI and seamless UX, Movix provides users with a
+            visually appealing and user-friendly experience to explore news,
+            releases, and behind-the-scenes insights. Whether its checking out
+            the latest movie trailers or discovering new TV shows, Movix keeps
+            users informed and entertained. By incorporating Redux into my
+            project, i significantly improved my state management strategy. The
+            centralized state, immutable updates, and well-defined actions
+            provided by Redux ensured a predictable flow of data throughout my
+            application. Also by adopting SCSS in my project, i significantly
+            enhanced my styling efficiency and code organization. The use of
+            variables and mixins enabled me to write reusable and maintainable
+            stylesheets, while nesting selectors and leveraging partials
+            improved readability and modularity.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a

@@ -26,16 +26,17 @@ const crypto = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className="my-2">
-            An Airbnb like website where user can log in either with making new
-            account or use their Google or Github accounts by the help of
-            NextAuth library. Also used react-hook-form library to handle the
-            form validation. Used Prisma to simplify the database management.
-            Used cloudinary for image uploads and also a date picker with react
-            datepicker library. I also learned a lot in this project specially
-            Typescript which helped me catch error in build time and also
-            explains what exactly the error is which makes it easy for me to
-            look for solutions. Its a fantastic language and im loving it
-            already and will be working with it a lot in my future projects.
+            RentRom is a full-stack web application it offers users a platform
+            to discover and book their ideal rental experiences. The app
+            includes features such as user authentication, rental search and
+            filtering, booking management, and detailed rental listings. With a
+            responsive design and integration of modern technologies, RentRom
+            provides users with a seamless and personalized rental experience. I
+            learned a lot in this project specially Typescript which helped me
+            catch error in build time and also explains what exactly the error
+            is which makes it easy for me to look for solutions. Its a fantastic
+            language and im loving it already and will be working with it a lot
+            in my future projects.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a

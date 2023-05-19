@@ -26,15 +26,15 @@ const property = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className="mt-2">
-            Realtime messaging by the help of a hosted WebSocket solution called
-            Pusher. An app where you can Add friends and sending friend requests
-            via email. Used Upstash Redis as my database since its known for
-            high performance and low latency and also good security. Used Google
-            authentication by the help of NextAuth library. The icons i used are
-            from Lucide.dev. I learned a lot about Typescript since its my first
-            time using it in a real project like this one. When i needed help i
-            used google, Stackoverflow and other web developer communities. I
-            used them a lot for this project.
+            FriendZone is a full-stack web application it provides users with a
+            platform to connect and socialize with friends. The app features
+            user authentication, friend management, and real-time chat
+            functionality. With a responsive design and seamless integration of
+            modern technologies, FriendZone offers an engaging and user-friendly
+            experience for fostering meaningful connections. I learned a lot
+            about Typescript since its my first time using it in a real project
+            like this one. When i needed help i used google, Stackoverflow and
+            other web developer communities. I used them a lot for this project.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
             <a
