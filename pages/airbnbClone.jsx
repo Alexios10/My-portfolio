@@ -4,7 +4,15 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import React from "react";
 import airbnbImg from "../public/assets/projects/airbnb-clone.png";
 
-const crypto = () => {
+const airbnb = () => {
+  const demo = () => {
+    window.open("https://rent-rom.vercel.app/", "_blank");
+  };
+
+  const code = () => {
+    window.open("https://github.com/Alexios10/RentRom", "_blank");
+  };
+
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -38,23 +46,11 @@ const crypto = () => {
             language and im loving it already and will be working with it a lot
             in my future projects.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">
-            <a
-              href="https://rent-rom.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Demo
-            </a>
+          <button onClick={demo} className="px-8 py-2 mt-4 mr-8">
+            Demo
           </button>
-          <button className="px-8 py-2 mt-4">
-            <a
-              href="https://github.com/Alexios10/RentRom"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Code
-            </a>
+          <button onClick={code} className="px-8 py-2 mt-4">
+            Code
           </button>
         </div>
 
@@ -101,4 +97,4 @@ const crypto = () => {
   );
 };
 
-export default crypto;
+export default airbnb;

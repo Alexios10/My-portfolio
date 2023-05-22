@@ -4,7 +4,14 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import React from "react";
 import movixImg from "../public/assets/projects/movix.png";
 
-const Hulu = () => {
+const movix = () => {
+  const demo = () => {
+    window.open("https://movix-self-nine.vercel.app/", "_blank");
+  };
+
+  const code = () => {
+    window.open("https://github.com/Alexios10/movix", "_blank");
+  };
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -17,7 +24,7 @@ const Hulu = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h1 className="py-2 font-mono">Movies news app</h1>
+          <h1 className="py-2 font-mono">Movies app</h1>
         </div>
       </div>
 
@@ -26,39 +33,24 @@ const Hulu = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className="mt-2">
-            Movix is a simple and intuitive web application it serves as a
-            platform for users to stay updated on the latest movies and TV
-            shows. With a sleek UI and seamless UX, Movix provides users with a
-            visually appealing and user-friendly experience to explore news,
-            releases, and behind-the-scenes insights. Whether its checking out
-            the latest movie trailers or discovering new TV shows, Movix keeps
-            users informed and entertained. By incorporating Redux into my
-            project, i significantly improved my state management strategy. The
-            centralized state, immutable updates, and well-defined actions
-            provided by Redux ensured a predictable flow of data throughout my
-            application. Also by adopting SCSS in my project, i significantly
-            enhanced my styling efficiency and code organization. The use of
-            variables and mixins enabled me to write reusable and maintainable
-            stylesheets, while nesting selectors and leveraging partials
-            improved readability and modularity.
+            Movix is a web application, it allows users to explore the latest
+            movies, access detailed information and watch trailers. With a
+            responsive design and integration of modern technologies, Movix
+            offers a seamless movie browsing experience. By incorporating Redux
+            into my project, i significantly improved my state management
+            strategy. The centralized state, immutable updates, and well-defined
+            actions provided by Redux ensured a predictable flow of data
+            throughout my application. Also by adopting SCSS in my project, i
+            significantly enhanced my styling efficiency and code organization.
+            The use of variables and mixins enabled me to write reusable and
+            maintainable stylesheets, while nesting selectors and leveraging
+            partials improved readability and modularity.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">
-            <a
-              href="https://movix-self-nine.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Demo
-            </a>
+          <button onClick={demo} className="px-8 py-2 mt-4 mr-8">
+            Demo
           </button>
-          <button className="px-8 py-2 mt-4">
-            <a
-              href="https://github.com/Alexios10/movix"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Code
-            </a>
+          <button onClick={code} className="px-8 py-2 mt-4">
+            Code
           </button>
         </div>
 
@@ -97,4 +89,4 @@ const Hulu = () => {
   );
 };
 
-export default Hulu;
+export default movix;

@@ -4,7 +4,15 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import React from "react";
 import chatAppImg from "../public/assets/projects/chat-app.png";
 
-const property = () => {
+const chatApp = () => {
+  const demo = () => {
+    window.open("https://chat-app-beta-navy.vercel.app/login", "_blank");
+  };
+
+  const code = () => {
+    window.open("https://github.com/Alexios10/chat-app", "_blank");
+  };
+
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -36,23 +44,11 @@ const property = () => {
             like this one. When i needed help i used google, Stackoverflow and
             other web developer communities. I used them a lot for this project.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">
-            <a
-              href="https://chat-app-beta-navy.vercel.app/login"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Demo
-            </a>
+          <button onClick={demo} className="px-8 py-2 mt-4 mr-8">
+            Demo
           </button>
-          <button className="px-8 py-2 mt-4">
-            <a
-              href="https://github.com/Alexios10/chat-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Code
-            </a>
+          <button onClick={code} className="px-8 py-2 mt-4">
+            Code
           </button>
         </div>
 
@@ -95,4 +91,4 @@ const property = () => {
   );
 };
 
-export default property;
+export default chatApp;

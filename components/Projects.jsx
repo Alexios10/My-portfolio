@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 import chatAppImg from "../public/assets/projects/chat-app.png";
 import airbnbImg from "../public/assets/projects/airbnb-clone.png";
 import movixImg from "../public/assets/projects/movix.png";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import foodAppImg from "../public/assets/projects/food-app.png";
 
 const Projects = () => {
   return (
@@ -27,15 +27,15 @@ const Projects = () => {
           />
 
           <ProjectItem
-            title="Movies news app"
+            title="Movies app"
             bgImg={movixImg}
             projectUrl="/movix"
           />
 
           <ProjectItem
-            title="Twitch UI"
-            bgImg={twitchImg}
-            projectUrl="/twitch"
+            title="Food app"
+            bgImg={foodAppImg}
+            projectUrl="/foodApp"
           />
         </div>
       </div>
