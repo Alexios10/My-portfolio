@@ -79,23 +79,23 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8 text-blue-500">Connect With Me</p>
-                <div className="flex items-center justify-evenly py-4">
+                <p className="uppercase pt-5 text-blue-500">Connect With Me</p>
+                <div className="flex justify-evenly items-center py-7">
                   <a
-                    className="rounded-full shadow-lg shadow-gray-500 p-3  hover:scale-110 ease-in duration-300"
+                    className="rounded-full shadow-lg shadow-gray-500 p-3  hover:scale-110 ease-in duration-200"
                     href="https://www.linkedin.com/in/sattar-rahim-082188236/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaLinkedinIn className="text-blue-600" size={30} />
+                    <FaLinkedinIn className="text-blue-600" size={25} />
                   </a>
                   <a
-                    className="rounded-full shadow-lg shadow-gray-500 p-3 hover:scale-110 ease-in duration-300"
+                    className="rounded-full shadow-lg shadow-gray-500 p-3 hover:scale-110 ease-in duration-200"
                     href="https://github.com/Alexios10"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaGithub className="text-black-600" size={30} />
+                    <FaGithub className="text-black-600" size={25} />
                   </a>
                 </div>
               </div>

@@ -42,7 +42,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
-
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -56,8 +55,6 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuRef]);
-
-
 
   return (
     <nav
@@ -100,7 +97,7 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="md:hidden cursor-pointer">
             <AiOutlineMenu size={30} />
           </div>
         </div>
@@ -127,7 +124,7 @@ const Navbar = () => {
               </p>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-200"
               >
                 <AiOutlineClose />
               </div>
@@ -172,20 +169,20 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-evenly my-4 w-full sm:w-[80%]">
                 <a
-                  className="rounded-full shadow-lg shadow-gray-500 p-3 hover:scale-110 ease-in duration-300"
+                  className="rounded-full shadow-lg shadow-gray-500 p-3 hover:scale-110 ease-in duration-200"
                   href="https://www.linkedin.com/in/rahim-sattar-082188236/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedinIn className="text-blue-600" size={30} />
+                  <FaLinkedinIn className="text-blue-600" size={25} />
                 </a>
                 <a
-                  className="rounded-full shadow-lg shadow-gray-500 p-3 hover:scale-110 ease-in duration-300"
+                  className="rounded-full shadow-lg shadow-gray-500 p-3 hover:scale-110 ease-in duration-200"
                   href="https://github.com/Alexios10"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub size={30} />
+                  <FaGithub size={25} />
                 </a>
               </div>
             </div>
