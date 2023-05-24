@@ -71,7 +71,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Name here</h2>
+                <h2 className="py-2">Sattar Rahim</h2>
                 <p>Front-End Developer</p>
                 <p className="py-4">
                   I am available for part-time or full-time positions. Contact
