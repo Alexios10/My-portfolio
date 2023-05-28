@@ -112,8 +112,8 @@ const Navbar = () => {
           ref={menuRef}
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500"
+              : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
           }
         >
           {/* Mobile Menu */}
