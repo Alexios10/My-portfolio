@@ -112,7 +112,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit(sendEmail)} ref={form}>
                 <div className="grid md:grid-cols-1 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
+                    <label className="uppercase text-sm py-2">Name*</label>
                     <input
                       name="name"
                       {...register("name", {
@@ -126,7 +126,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label className="uppercase text-sm py-2">Email*</label>
                   <input
                     name="email"
                     {...register("email", {
@@ -148,7 +148,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Massage</label>
+                  <label className="uppercase text-sm py-2">Massage*</label>
                   <textarea
                     name="message"
                     {...register("message", {
